@@ -16,28 +16,28 @@ export default function TaskList({ tasks, isLoading, onTaskUpdated, onTaskDelete
 
   if (isLoading) {
     return (
-      <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 flex flex-col items-center justify-center min-h-[400px] animate-pulse">
-        <div className="w-16 h-16 bg-purple-500/20 rounded-full mb-4"></div>
-        <div className="h-4 w-32 bg-purple-500/20 rounded-full mb-2"></div>
-        <div className="h-4 w-48 bg-purple-500/20 rounded-full"></div>
+      <div className="bg-white/5 backdrop-blur-lg rounded-3xl shadow-2xl p-8 flex flex-col items-center justify-center min-h-[400px] animate-pulse">
+        <div className="w-16 h-16 bg-mint-500/20 rounded-full mb-4"></div>
+        <div className="h-4 w-32 bg-mint-500/20 rounded-full mb-2"></div>
+        <div className="h-4 w-48 bg-mint-500/20 rounded-full"></div>
       </div>
     )
   }
 
   if (tasks.length === 0) {
     return (
-      <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 flex flex-col items-center justify-center min-h-[400px] text-center animate-fadeIn">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-purple-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div className="bg-white/5 backdrop-blur-lg rounded-3xl shadow-2xl p-8 flex flex-col items-center justify-center min-h-[400px] text-center animate-fadeIn">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-mint-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
         </svg>
         <h3 className="text-xl font-medium text-white">No tasks yet</h3>
-        <p className="text-gray-400 mt-2">Add your first task to get started</p>
+        <p className="text-mint-200/70 mt-2">Add your first task to get started</p>
       </div>
     )
   }
 
   return (
-    <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 transform transition-all duration-300 hover:shadow-purple-500/20">
+    <div className="bg-white/5 backdrop-blur-lg rounded-3xl shadow-2xl p-8 transform transition-all duration-300 hover:shadow-mint-500/20">
       <h2 className="text-2xl font-semibold text-white mb-8">Your Tasks</h2>
       <div className="space-y-4">
         {tasks.map((task, index) => (

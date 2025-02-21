@@ -31,7 +31,7 @@ export default function TaskForm({ onTaskAdded }) {
   const today = new Date().toISOString().split('T')[0]
 
   return (
-    <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 h-fit transform transition-all duration-300 hover:shadow-purple-500/20">
+    <div className="bg-white/5 backdrop-blur-lg rounded-3xl shadow-2xl p-8 h-fit transform transition-all duration-300 hover:shadow-mint-500/20">
       <h2 className="text-2xl font-semibold text-white mb-8">Create Task</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
@@ -93,8 +93,8 @@ export default function TaskForm({ onTaskAdded }) {
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full py-3 px-4 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium 
-            hover:from-purple-600 hover:to-pink-600 focus:ring-4 focus:ring-purple-500/20 transition-all duration-300 
+          className={`w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-mint-500 text-white font-medium 
+            hover:from-emerald-600 hover:to-mint-600 focus:ring-4 focus:ring-mint-500/20 transition-all duration-300 
             flex items-center justify-center space-x-2 ${isSubmitting ? 'opacity-75 scale-95' : 'hover:scale-[1.02]'}`}
         >
           <svg xmlns="http://www.w3.org/2000/svg" 

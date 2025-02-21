@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import TaskForm from './components/TaskForm'
 import TaskList from './components/TaskList'
 import QuoteSection from './components/QuoteSection'
+import FloatingIcons from './components/FloatingIcons'
 
 export default function App() {
   const [tasks, setTasks] = useState([])
@@ -41,13 +42,14 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-purple-900 py-12 px-4 transition-all duration-500">
-      <div className="max-w-5xl mx-auto animate-fadeIn">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-950 via-teal-900 to-mint-900 py-12 px-4 transition-all duration-500 relative overflow-hidden">
+      <FloatingIcons />
+      <div className="max-w-5xl mx-auto animate-fadeIn relative z-10">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300 mb-4 animate-slideDown hover:scale-105 transition-transform duration-300">
+          <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-mint-300 mb-4 animate-slideDown hover:scale-105 transition-transform duration-300">
             Taskify
           </h1>
-          <p className="text-gray-300 text-lg mb-8 animate-slideDown animation-delay-200">
+          <p className="text-mint-200 text-lg mb-8 animate-slideDown animation-delay-200">
             Organize your tasks efficiently
           </p>
         </div>
@@ -68,7 +70,7 @@ export default function App() {
         </div>
 
         <footer className="text-center mt-16 animate-fadeIn animation-delay-500">
-          <p className="text-gray-400 text-sm">
+          <p className="text-emerald-300/70 text-sm">
             Crafted with 
             <span className="mx-1 text-red-400 animate-pulse">❤</span> 
             by 
@@ -76,7 +78,7 @@ export default function App() {
               href="https://github.com/DevOlawale" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="ml-1 text-purple-400 hover:text-purple-300 transition-colors duration-300"
+              className="ml-1 text-mint-400 hover:text-mint-300 transition-colors duration-300"
             >
               DevOlawale
             </a>

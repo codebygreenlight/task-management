@@ -62,13 +62,13 @@ export default function QuoteSection() {
   return (
     <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 transform transition-all duration-300 hover:bg-white/10">
       <div className={`transition-opacity duration-500 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-purple-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-mint-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
         </svg>
-        <blockquote className="text-lg text-gray-200 font-medium mb-2">
+        <blockquote className="text-lg text-emerald-100 font-medium mb-2">
           "{quote.text}"
         </blockquote>
-        <cite className="text-sm text-purple-400 block">
+        <cite className="text-sm text-mint-400 block">
           — {quote.author}
         </cite>
       </div>
